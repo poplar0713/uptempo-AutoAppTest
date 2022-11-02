@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Paralleltest]">
+  <test thread-count="4" parallel="tests" name="Galaxy S21 Ultra+onenavi(failed)">
+    <parameter name="appPackage" value="kt.navi"/>
+    <parameter name="appActivity" value="kt.navi.UIActivity"/>
+    <parameter name="udid" value="R3CN910J24T"/>
+    <parameter name="deviceName" value="Galaxy S21 Ultra"/>
+    <parameter name="systemPort" value="8205"/>
+    <classes>
+      <class name="com.test.testcase.KtOneNavi">
+        <methods>
+          <include name="teardown"/>
+          <include name="loginTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.test.testcase.KtOneNavi -->
+    </classes>
+  </test> <!-- Galaxy S21 Ultra+onenavi(failed) -->
+  <test thread-count="4" parallel="tests" name="Galaxy S10+onenavi(failed)">
+    <parameter name="appPackage" value="kt.navi"/>
+    <parameter name="appActivity" value="kt.navi.UIActivity"/>
+    <parameter name="udid" value="R39KB0EBV4"/>
+    <parameter name="deviceName" value="Galaxy S10"/>
+    <parameter name="systemPort" value="8206"/>
+    <classes>
+      <class name="com.test.testcase.KtOneNavi">
+        <methods>
+          <include name="teardown"/>
+          <include name="loginTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.test.testcase.KtOneNavi -->
+    </classes>
+  </test> <!-- Galaxy S10+onenavi(failed) -->
+  <test thread-count="4" parallel="tests" name="Galaxy Z Flip3 5G+onenavi(failed)">
+    <parameter name="appPackage" value="kt.navi"/>
+    <parameter name="appActivity" value="kt.navi.UIActivity"/>
+    <parameter name="udid" value="R3CN50281W"/>
+    <parameter name="deviceName" value="Galaxy Z Flip3 5G"/>
+    <parameter name="systemPort" value="8203"/>
+    <classes>
+      <class name="com.test.testcase.KtOneNavi">
+        <methods>
+          <include name="teardown"/>
+          <include name="loginTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.test.testcase.KtOneNavi -->
+    </classes>
+  </test> <!-- Galaxy Z Flip3 5G+onenavi(failed) -->
+  <test thread-count="4" parallel="tests" name="Galaxy Note20 5G+onenavi(failed)">
+    <parameter name="appPackage" value="kt.navi"/>
+    <parameter name="appActivity" value="kt.navi.UIActivity"/>
+    <parameter name="udid" value="R3CN60G8ZSA"/>
+    <parameter name="deviceName" value="Galaxy Note20 5G"/>
+    <parameter name="systemPort" value="8204"/>
+    <classes>
+      <class name="com.test.testcase.KtOneNavi">
+        <methods>
+          <include name="teardown"/>
+          <include name="loginTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.test.testcase.KtOneNavi -->
+    </classes>
+  </test> <!-- Galaxy Note20 5G+onenavi(failed) -->
+</suite> <!-- Failed suite [Paralleltest] -->

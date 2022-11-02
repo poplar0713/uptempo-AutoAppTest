@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Paralleltest" parallel="tests" thread-count="4">
+    <test name="Galaxy Note20 5G+olleh.android">
+        <parameter name="deviceName" value="Galaxy Note20 5G"/>
+        <parameter name="udid" value="R3CN60G8ZSA"/>
+        <parameter name="systemPort" value="8204"/>
+        <parameter name="appPackage" value="com.olleh.android.oc2"/>
+        <parameter name="appActivity" value="com.olleh.android.oc2.MainActivity"/>
+        <classes>
+            <class name="com.test.testcase.KtMemberShip"/>
+        </classes>
+    </test>
+    <test name="Galaxy S10+olleh.android">
+        <parameter name="deviceName" value="Galaxy S10"/>
+        <parameter name="udid" value="R39KB0EBV4"/>
+        <parameter name="systemPort" value="8206"/>
+        <parameter name="appPackage" value="com.olleh.android.oc2"/>
+        <parameter name="appActivity" value="com.olleh.android.oc2.MainActivity"/>
+        <classes>
+            <class name="com.test.testcase.KtMemberShip"/>
+        </classes>
+    </test>
+    <test name="Galaxy S21 Ultra+olleh.android">
+        <parameter name="deviceName" value="Galaxy S21 Ultra"/>
+        <parameter name="udid" value="R3CN910J24T"/>
+        <parameter name="systemPort" value="8205"/>
+        <parameter name="appPackage" value="com.olleh.android.oc2"/>
+        <parameter name="appActivity" value="com.olleh.android.oc2.MainActivity"/>
+        <classes>
+            <class name="com.test.testcase.KtMemberShip"/>
+        </classes>
+    </test>
+        <test name="Galaxy Z Flip3 5G+olleh.android">
+        <parameter name="deviceName" value="Galaxy Z Flip3 5G"/>
+        <parameter name="udid" value="R3CN50281W"/>
+        <parameter name="systemPort" value="8203"/>
+        <parameter name="appPackage" value="com.olleh.android.oc2"/>
+        <parameter name="appActivity" value="com.olleh.android.oc2.MainActivity"/>
+        <classes>
+            <class name="com.test.testcase.KtMemberShip"/>
+        </classes>
+    </test>
+</suite>

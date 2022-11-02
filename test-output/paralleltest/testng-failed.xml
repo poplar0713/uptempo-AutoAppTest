@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Paralleltest]">
+  <test thread-count="2" parallel="tests" name="61f2493f95d769424f89cdaf(failed)">
+    <parameter name="udid" value="R3CM906L6EK"/>
+    <parameter name="deviceName" value="Galaxy Note10 5G"/>
+    <parameter name="systemPort" value="8202"/>
+    <classes>
+      <class name="com.test.testcase.LoginTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.test.testcase.LoginTest -->
+    </classes>
+  </test> <!-- 61f2493f95d769424f89cdaf(failed) -->
+  <test thread-count="2" parallel="tests" name="61f2433f95d769424f89cdae(failed)">
+    <parameter name="udid" value="ce0617163b172e19027e"/>
+    <parameter name="deviceName" value="Note8"/>
+    <parameter name="systemPort" value="8201"/>
+    <classes>
+      <class name="com.test.testcase.LoginTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.test.testcase.LoginTest -->
+    </classes>
+  </test> <!-- 61f2433f95d769424f89cdae(failed) -->
+</suite> <!-- Failed suite [Paralleltest] -->
