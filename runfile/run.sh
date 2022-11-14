@@ -1,0 +1,1 @@
+curl -x post http://uptempo:[privatekey]@localhost:9090/job/TestNG/build?token=from_dbtime
