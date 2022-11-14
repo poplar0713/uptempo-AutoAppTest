@@ -25,7 +25,7 @@ public class ScheduledConfig {
 
 	Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	// 10초마다 실행
+	// 10초마다 실행 >> 확인 후 정각 단위로 배치 프로그램 실
 	@Scheduled(cron = "0/10 * * * * *")
 	public void checkTimeSchedule() throws IOException {
 
