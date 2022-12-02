@@ -25,7 +25,7 @@ public class KtshowLoginTest extends BaseSetting {
 		driver.findElement(By.id("com.ktshow.cs:id/btn_next")).click();
 
 		Thread.sleep(5000);
-		
+
 		driver.findElement(By.xpath(
 				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.ImageView"))
 				.click();
@@ -63,8 +63,8 @@ public class KtshowLoginTest extends BaseSetting {
 				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View[1]/android.widget.Button"))
 				.click();
 
-		driver.findElement(By.id("com.ktshow.cs:id/btn_confirm")).click();  
-		//	
+		driver.findElement(By.id("com.ktshow.cs:id/btn_confirm")).click();
+		//
 
 
 		//driver.findElement(By.id("com.ktshow.cs:id/btn_confirm")).click();

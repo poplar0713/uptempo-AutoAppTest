@@ -14,16 +14,16 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class BaseSetting  {
     public        AndroidDriver<MobileElement> driver;
-  
+
     @BeforeTest(alwaysRun = true)
-    @Parameters({"deviceName", "udid", "systemPort", "appPackage", "appActivity"})   
+    @Parameters({"deviceName", "udid", "systemPort", "appPackage", "appActivity"})
     public void setup(String deviceName, String udid, String systemPort, String appPackage, String appActivity) throws IOException  {
-    	
+
     	URL url = new URL("http://127.0.0.1:4444/wd/hub");
-    
-    	
+
+
     	DesiredCapabilities capabilitiesUtil = new DesiredCapabilities();
-    	capabilitiesUtil.setCapability("udid",udid);	   
+    	capabilitiesUtil.setCapability("udid",udid);
     	capabilitiesUtil.setCapability("deviceName", deviceName);
     	capabilitiesUtil.setCapability("platformName", "Android");
     	capabilitiesUtil.setCapability("newCommandTimeout", 20000);
@@ -34,11 +34,11 @@ public class BaseSetting  {
     	capabilitiesUtil.setCapability("systemPort", systemPort);
     	capabilitiesUtil.setCapability("autoGrantPermissions", true);
     	capabilitiesUtil.setCapability("noReset", false);
-    	
-    	driver = new AndroidDriver<MobileElement>(url, capabilitiesUtil);
-    	
+
+    	driver = new AndroidDriver<>(url, capabilitiesUtil);
+
     	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-           
+
     }
 
 
@@ -46,7 +46,7 @@ public class BaseSetting  {
     @AfterTest(alwaysRun = true)
     public void teardown(){
         if(driver !=null) {
-       
+
         	driver.quit();
         }
     }

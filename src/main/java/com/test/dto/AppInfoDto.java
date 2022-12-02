@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class AppInfoDto {
-	
+
 	@Id
 	private String appName;
 	private String appEnName;

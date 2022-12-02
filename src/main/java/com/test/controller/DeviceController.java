@@ -1,6 +1,5 @@
 package com.test.controller;
 
-import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -11,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.test.config.ShellCmd;
 import com.test.dto.AppInfoDto;
 import com.test.dto.DeviceDto;
 import com.test.service.CreateXml;
@@ -75,7 +73,7 @@ public class DeviceController {
 
 		String response = deviceService.insert(date, depName, name);
 		System.out.println(response);
-		createXmlService.createXml(deviceList, appInfoeList, depName, name);
+		CreateXml.createXml(deviceList, appInfoeList, depName, name);
 
 		return "/deviceList";
 	}

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>login</title>
 <script type="text/javascript" src="/js/function.js"></script>
 </head>
@@ -11,10 +11,12 @@
 <body>
 	<form action = "/deviceList" method="post">
 		 단말 <br>
+		 <!-- 
         <input type="checkbox" name="checkedValue" value="Galaxy Note20 5G"/>갤럭시 노트20 5G
         <input type="checkbox" name="checkedValue" value="Galaxy S10"/>갤럭시 S10
         <input type="checkbox" name="checkedValue" value="Galaxy Z Flip3 5G"/>갤럭시 Z Flip3 5G
-        <input type="checkbox" name="checkedValue" value="Galaxy S21 Ultra"/>갤럭시 S21 울트라
+         -->
+        <input type="checkbox" name="checkedValue" value="Galaxy S22 Ultra"/>갤럭시 S22 울트라
      
         <br><br>테스트 앱 <br>
          <input type="checkbox" name="checkedApplication" value="gigagenie"/>기가지니

@@ -2,9 +2,6 @@ package com.test.config;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -25,8 +22,8 @@ public class ScheduledConfig {
 
 	Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	// 10초마다 실행 >> 확인 후 정각 단위로 배치 프로그램 실
-	@Scheduled(cron = "0/10 * * * * *")
+	// 60초마다 실행 >> 확인 후 정각 단위로 배치 프로그램 실
+	@Scheduled(cron = "0/60 * * * * *")
 	public void checkTimeSchedule() throws IOException {
 
 		logger.info("[MYTEST] test batch {}", LocalDateTime.now());
@@ -41,17 +38,17 @@ public class ScheduledConfig {
 		if (work != null) {
 			File oldFile = new File("/home/uptemto/Desktop/appiumtest/" + work.getDepName() + work.getName() + "/testng.xml");
 			File newFile = new File("/home/uptemto/Desktop/appiumtest/appium_workspace/test/testng.xml");
-		
+
 			if(oldFile.exists()) {
 				logger.info("OLD파일이 존재합니다.");
 			}
 
 
 		//	Files.deleteIfExists(Paths.get("D:\\appium_workspace\\test\\testng.xml"));
-			oldFile.renameTo(newFile);	
-			
-		
-			
+			oldFile.renameTo(newFile);
+
+
+
 			if(newFile.exists()) {
 				logger.info("파일이 존재합니다.");
 			}

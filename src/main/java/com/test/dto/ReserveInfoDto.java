@@ -17,12 +17,12 @@ public class ReserveInfoDto {
 
 	@Id
 	private String id;
-	
+
 	private String reservedTime;
 	private String depName;
 	private String name;
 	private String path;
 	private Date createdDate;
 
-	
+
 }

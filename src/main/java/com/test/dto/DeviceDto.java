@@ -14,12 +14,13 @@ import lombok.NoArgsConstructor;
 public class DeviceDto {
 
 	@Id
-	//private String _id;//mongodb의 Document(레코드에 해당)식별자
+	private String _id;
 	private String name;
 	private String deviceName;
 	private String udid;
+	private String modelName;
 	private String systemPort;
-	
+
 	public String getName() {
 		return name;
 	}
@@ -44,7 +45,7 @@ public class DeviceDto {
 	public void setSystemPort(String systemPort) {
 		this.systemPort = systemPort;
 	}
-	
 
-	
+
+
 }
