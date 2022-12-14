@@ -14,9 +14,6 @@ import org.springframework.data.mongodb.core.mapping.MongoMappingContext;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 
-
-
-
 //root-context에 들어가던 태그의 코드화
 
 @Configuration
@@ -32,7 +29,4 @@ public class MongoConfig{
 		MappingMongoConverter converter = new MappingMongoConverter(new DefaultDbRefResolver(factory), new MongoMappingContext());
 		converter.setTypeMapper(new DefaultMongoTypeMapper(null)); return new MongoTemplate(factory, converter);
 	}
-
-
-
 }
