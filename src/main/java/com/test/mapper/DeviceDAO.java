@@ -5,11 +5,11 @@ import com.test.dto.DeviceDto;
 import com.test.dto.ReserveInfoDto;
 
 public interface DeviceDAO {
-	DeviceDto deviceCheck(String deviceName);  //device 체크 메소드
+	DeviceDto deviceCheck(String deviceName); // device 체크 메소드
 
 	AppInfoDto appInfoCheck(String appName);
 
-    String insert(String reservedTime, String depName, String name);
+	String insert(String reservedTime, String depName, String name);
 
 	ReserveInfoDto checkTheTime(String reservedTime);
 
