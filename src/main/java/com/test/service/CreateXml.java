@@ -94,13 +94,13 @@ public class CreateXml {
 			transformer.setOutputProperty(OutputKeys.DOCTYPE_PUBLIC, "yes"); // doc.setXmlStandalone(true); 했을때 붙어서
 																				// 출력되는부분 개행
 			DOMSource source = new DOMSource(doc);
-			
+
 			String path = "/home/uptemto/Desktop/appiumtest/" + depName + "/" + name;
 			File Folder = new File(path);
 
 			if (!Folder.exists()) {
 				try {
-					if(Folder.mkdir() == true)
+					if (Folder.mkdir() == true)
 						System.out.println("make new folder");
 					else
 						System.out.println("folder mkdirs() fail");
@@ -114,9 +114,9 @@ public class CreateXml {
 //			FileOutputStream ofp = new FileOutputStream(filePath);
 //			StreamResult result = new StreamResult(ofp);
 //			transformer.transform(source, result);
-			
+
 			System.out.println("=========END=========");
-			
+
 			System.out.println(Folder.getAbsolutePath());
 		} catch (Exception e) {
 			e.printStackTrace();
