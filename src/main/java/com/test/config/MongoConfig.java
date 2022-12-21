@@ -17,16 +17,18 @@ import com.mongodb.client.MongoClients;
 //root-context에 들어가던 태그의 코드화
 
 @Configuration
-public class MongoConfig{
+public class MongoConfig {
 
 	@Value("${spring.data.mongodb.uri}")
 	private String mongodb_uri;
 
 	@Bean(name = "mongoTemplate1")
 	public MongoTemplate mongoTemplate1() {
-		MongoClient mongoClient =  MongoClients.create(mongodb_uri);
+		MongoClient mongoClient = MongoClients.create(mongodb_uri);
 		MongoDatabaseFactory factory = new SimpleMongoClientDatabaseFactory(mongoClient, "uptempodevice");
-		MappingMongoConverter converter = new MappingMongoConverter(new DefaultDbRefResolver(factory), new MongoMappingContext());
-		converter.setTypeMapper(new DefaultMongoTypeMapper(null)); return new MongoTemplate(factory, converter);
+		MappingMongoConverter converter = new MappingMongoConverter(new DefaultDbRefResolver(factory),
+				new MongoMappingContext());
+		converter.setTypeMapper(new DefaultMongoTypeMapper(null));
+		return new MongoTemplate(factory, converter);
 	}
 }
