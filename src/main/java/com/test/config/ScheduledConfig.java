@@ -36,20 +36,18 @@ public class ScheduledConfig {
 		ReserveInfoDto work = deviceService.checkTheTime(formatDate);
 
 		if (work != null) {
-			File oldFile = new File("/home/uptemto/Desktop/appiumtest/" + work.getDepName() + work.getName() + "/testng.xml");
+			File oldFile = new File(
+					"/home/uptemto/Desktop/appiumtest/" + work.getDepName() + work.getName() + "/testng.xml");
 			File newFile = new File("/home/uptemto/Desktop/appiumtest/appium_workspace/test/testng.xml");
 
-			if(oldFile.exists()) {
+			if (oldFile.exists()) {
 				logger.info("OLD파일이 존재합니다.");
 			}
 
-
-		//	Files.deleteIfExists(Paths.get("D:\\appium_workspace\\test\\testng.xml"));
+			// Files.deleteIfExists(Paths.get("D:\\appium_workspace\\test\\testng.xml"));
 			oldFile.renameTo(newFile);
 
-
-
-			if(newFile.exists()) {
+			if (newFile.exists()) {
 				logger.info("파일이 존재합니다.");
 			}
 
