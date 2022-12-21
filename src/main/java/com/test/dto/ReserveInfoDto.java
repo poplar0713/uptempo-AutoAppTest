@@ -24,5 +24,4 @@ public class ReserveInfoDto {
 	private String path;
 	private Date createdDate;
 
-
 }
