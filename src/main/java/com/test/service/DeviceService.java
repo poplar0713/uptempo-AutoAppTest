@@ -16,6 +16,4 @@ public interface DeviceService {
 
 	ReserveInfoDto deleteTheTime(String reservedTime);
 
-
-
 }
