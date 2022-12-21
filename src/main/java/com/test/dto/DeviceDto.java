@@ -24,28 +24,33 @@ public class DeviceDto {
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public String getDeviceName() {
 		return deviceName;
 	}
+
 	public void setDeviceName(String deviceName) {
 		this.deviceName = deviceName;
 	}
+
 	public String getUdid() {
 		return udid;
 	}
+
 	public void setUdid(String udid) {
 		this.udid = udid;
 	}
+
 	public String getSystemPort() {
 		return systemPort;
 	}
+
 	public void setSystemPort(String systemPort) {
 		this.systemPort = systemPort;
 	}
-
-
 
 }
