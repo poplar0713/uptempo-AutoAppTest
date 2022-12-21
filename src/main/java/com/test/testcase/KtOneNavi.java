@@ -32,7 +32,7 @@ public class KtOneNavi extends BaseSetting {
 			System.out.println("NOT FOUND!");
 		}
 
-		//메뉴클릭
+		// 메뉴클릭
 		driver.findElement(By.id("kt.navi:id/iv_New_Badge")).click();
 
 		Thread.sleep(500);
