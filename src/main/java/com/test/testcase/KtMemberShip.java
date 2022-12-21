@@ -20,7 +20,7 @@ public class KtMemberShip extends BaseSetting {
 
 		driver.findElement(By.id("com.olleh.android.oc2:id/Leftnavi_login")).click();
 
-		//로그인화면
+		// 로그인화면
 		driver.findElement(By.id("com.olleh.android.oc2:id/spl_checkbox_login_keep")).click();
 		driver.findElement(By.id("com.olleh.android.oc2:id/btn_hole")).click();
 		driver.findElement(By.id("com.olleh.android.oc2:id/spl_edit_id")).sendKeys("test");
