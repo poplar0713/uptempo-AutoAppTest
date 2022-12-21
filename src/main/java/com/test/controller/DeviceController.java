@@ -63,7 +63,7 @@ public class DeviceController {
 		System.out.println(deviceList.size());
 
 		String date = year + "-" + month + "-" + day + " " + hour + ":00:00";
-		System.out.println("depName = "+depName);
+		System.out.println("depName = " + depName);
 		if (depName == "" && name == "") {
 			System.out.println("부서가 없어요");
 			depName = "right";
